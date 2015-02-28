@@ -9,6 +9,7 @@ public class PathTest {
 		Path p = new Path();
 		p.insertPath("Bangalore","Singapore");
 		p.insertPath("Singapore","Seoul");
+		p.insertPath("Singapore","Dubai");
 		p.insertPath("Seoul","Beijing");
 		p.insertPath("Beijing","Tokyo");
 		return p;
@@ -23,7 +24,7 @@ public class PathTest {
 	@Test
 	public void there_is_path_between_singapore_Seol(){
 		Path p = path();
-		assertEquals(p.hasPath("Singapore","Seoul"),true);
+		assertEquals(p.hasPath("Singapore","Seoul"),false);
 	}
 }
 

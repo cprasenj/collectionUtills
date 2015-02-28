@@ -8,7 +8,7 @@ class Start {
 	}
 
 	public boolean equals(Object other) {
-		return place == ((Start) other).place;
+		return place == ((Start) other).place();
 	}
 
 	public int hashCode() {
