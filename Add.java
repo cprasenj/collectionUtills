@@ -1,5 +1,5 @@
-public class Add implements ListMapper{
-	public Object manipulator(Object a) {
-		return (Integer)a+1;
+public class Add implements ListMapper<Integer>{
+	public Integer manipulator(Integer a) {
+		return a+1;
 	}
 }

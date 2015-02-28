@@ -2,7 +2,6 @@ import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;
 
-import static org.junit.Assert.*;
 public class CollectionUtilsTest {
 	@Test
 	public void initialtest() {

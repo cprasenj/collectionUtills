@@ -1,3 +1,3 @@
 interface ListMapper<E>{
-	public Object manipulator(Object a);
+	public E manipulator(E a);
 }

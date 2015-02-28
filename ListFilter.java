@@ -1,3 +1,3 @@
 interface ListFilter<E>{
-	public boolean qualifire(Object a);
+	public boolean qualifire(E a);
 }

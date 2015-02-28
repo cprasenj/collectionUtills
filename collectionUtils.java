@@ -11,7 +11,7 @@ public class collectionUtils{
 
 	public static <E> List filter(List<E> list, ListFilter lf) {
 		List l = new ArrayList();
-		for(Object i: list)
+		for(E i: list)
 			if(lf.qualifire(i))
 				l.add(i);
 		return l;			
