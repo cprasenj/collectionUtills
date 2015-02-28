@@ -20,14 +20,14 @@ public class CollectionUtilsTest {
 		l.add(4);
 		p = collectionUtils.map(l,a);
 		for(int i = 0;i<5;i++){
-			assertEquals((int)p.get(i),i+1);
+			assertEquals(p.get(i),i+1);
 		}
 	}
 
 	@Test
 	public void Map_gives_upperCase_string_list(){
-		List<String> l = new ArrayList<String>();
-		List<String> p = new ArrayList<String>();
+		List l = new ArrayList();
+		List p = new ArrayList();
 		UpperCase a = new UpperCase();
 		l.add("prasenjit");
 		l.add("buddha");
@@ -36,18 +36,18 @@ public class CollectionUtilsTest {
 		l.add("swamiji");
 		l.add("jayanth");
 		p = collectionUtils.map(l,a);
-		assertEquals((String)p.get(0),"PRASENJIT");
-		assertEquals((String)p.get(1),"BUDDHA");
-		assertEquals((String)p.get(2),"POOJA RANI");
-		assertEquals((String)p.get(3),"ANANTHU");
-		assertEquals((String)p.get(4),"SWAMIJI");
-		assertEquals((String)p.get(5),"JAYANTH");
+		assertEquals(p.get(0),"PRASENJIT");
+		assertEquals(p.get(1),"BUDDHA");
+		assertEquals(p.get(2),"POOJA RANI");
+		assertEquals(p.get(3),"ANANTHU");
+		assertEquals(p.get(4),"SWAMIJI");
+		assertEquals(p.get(5),"JAYANTH");
 	}
 
 	@Test
 	public void filter_gives_vaalues_greater_than_five() {
-		List<Integer> l = new ArrayList<Integer>();
-		List<Integer> p = new ArrayList<Integer>();
+		List l = new ArrayList();
+		List p = new ArrayList();
 		GreaterThanFive a = new GreaterThanFive();
 		l.add(3);
 		l.add(7);
@@ -56,8 +56,8 @@ public class CollectionUtilsTest {
 		l.add(1);
 		l.add(9);
 		p = collectionUtils.filter(l,a);
-		assertEquals((int)p.get(0),7);
-		assertEquals((int)p.get(1),8);
-		assertEquals((int)p.get(2),9);
+		assertEquals(p.get(0),7);
+		assertEquals(p.get(1),8);
+		assertEquals(p.get(2),9);
 	}
 }

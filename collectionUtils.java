@@ -1,15 +1,15 @@
 import java.util.*;
 
-public class collectionUtils {
-	public static List map(List list, ListMapper lm) {
+public class collectionUtils{
+	public static <E> List map(List<E> list, ListMapper lm) {
 		List l = new ArrayList();
-		for(Object i: list){
+		for(E i: list){
 			l.add(lm.manipulator(i));
 		}
 		return l;
 	}
 
-	public static List filter(List list, ListFilter lf) {
+	public static <E> List filter(List<E> list, ListFilter lf) {
 		List l = new ArrayList();
 		for(Object i: list)
 			if(lf.qualifire(i))
