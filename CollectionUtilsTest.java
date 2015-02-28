@@ -74,5 +74,21 @@ public class CollectionUtilsTest {
 		for(int i = 0;i<5;i++){
 			assertEquals(p.get(i),""+(i+1));
 		}
+	}
+
+	@Test
+	public void reduce_gives_adds_all_the_numbers_and_gives_the_result(){
+		List l = new ArrayList();
+		Integer p;
+		Integer result = new Integer(10);
+		ReduceAdd a = new ReduceAdd();
+		l.add(0);
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(4);
+		Integer b = new Integer(0);
+		p = CollectionUtils.reduce(l,a,b);
+		assertEquals(p,result);
 	}	
 }
