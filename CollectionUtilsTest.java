@@ -17,7 +17,7 @@ public class CollectionUtilsTest {
 		l.add(2);
 		l.add(3);
 		l.add(4);
-		p = collectionUtils.map(l,a);
+		p = CollectionUtils.map(l,a);
 		for(int i = 0;i<5;i++){
 			assertEquals(p.get(i),i+1);
 		}
@@ -34,7 +34,7 @@ public class CollectionUtilsTest {
 		l.add("ananthu");
 		l.add("swamiji");
 		l.add("jayanth");
-		p = collectionUtils.map(l,a);
+		p = CollectionUtils.map(l,a);
 		assertEquals(p.get(0),"PRASENJIT");
 		assertEquals(p.get(1),"BUDDHA");
 		assertEquals(p.get(2),"POOJA RANI");
@@ -54,7 +54,7 @@ public class CollectionUtilsTest {
 		l.add(8);
 		l.add(1);
 		l.add(9);
-		p = collectionUtils.filter(l,a);
+		p = CollectionUtils.filter(l,a);
 		assertEquals(p.get(0),7);
 		assertEquals(p.get(1),8);
 		assertEquals(p.get(2),9);

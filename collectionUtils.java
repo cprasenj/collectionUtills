@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class collectionUtils{
+public class CollectionUtils{
 	public static <E> List map(List<E> list, ListMapper lm) {
 		List l = new ArrayList();
 		for(E i: list){
