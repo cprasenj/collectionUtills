@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class CollectionUtils{
-	public static <E> List map(List<E> list, ListMapper lm) {
+	public static <E,K> List <K> map(List<K> list, ListMapper lm) {
 		List l = new ArrayList();
-		for(E i: list){
+		for(K i: list){
 			l.add(lm.manipulator(i));
 		}
 		return l;

@@ -59,4 +59,20 @@ public class CollectionUtilsTest {
 		assertEquals(p.get(1),8);
 		assertEquals(p.get(2),9);
 	}
+
+	@Test
+	public void Map_gives_add_one_with_each_value_and_gives_a_different_string_list(){
+		List l = new ArrayList();
+		List p = new ArrayList();
+		AddString a = new AddString();
+		l.add(0);
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.add(4);
+		p = CollectionUtils.map(l,a);
+		for(int i = 0;i<5;i++){
+			assertEquals(p.get(i),""+(i+1));
+		}
+	}	
 }

@@ -1,3 +1,3 @@
-interface ListMapper<E>{
-	public E manipulator(E a);
+interface ListMapper<E,K>{
+	public K manipulator(E a);
 }
